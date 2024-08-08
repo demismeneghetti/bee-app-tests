@@ -1,0 +1,10 @@
+.content {
+    display: flex;
+  }
+  
+  .main-content {
+    margin-left: 200px; /* Ajuste conforme necessário para a largura da sidebar */
+    padding: 20px;
+    width: calc(100% - 200px); /* Ajuste conforme necessário para a largura da sidebar */
+  }
+  

@@ -1,0 +1,27 @@
+.sidebar {
+    width: 200px;
+    height: calc(100vh - 70px); /* Ajuste para a altura da topbar */
+    background-color: #f8f9fa;
+    position: fixed;
+    top: 70px; /* Ajuste para a altura da topbar */
+    left: 0;
+    padding: 20px;
+    z-index: 999; /* Certifique-se de que a sidebar fique abaixo da topbar */
+  }
+  
+  .sidebar .list-group-item {
+    border: none;
+    padding: 10px 20px;
+  }
+  
+  .sidebar .list-group-item a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    text-align: left; /* Alinha os itens do menu à esquerda */
+  }
+  
+  .sidebar .list-group-item a:hover {
+    color: #007bff;
+  }
+  

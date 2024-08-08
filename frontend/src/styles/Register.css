@@ -1,0 +1,79 @@
+body {
+  background-color: #343a40; /* Cor de fundo da página */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.register-container {
+  background-color: #f8f9fa; /* Cor de fundo do container */
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px; /* Ajuste da largura máxima */
+  text-align: center;
+}
+
+.register-container img {
+  max-width: 100px;
+  margin-bottom: 1rem;
+}
+
+.register-container h2 {
+  color: #000000; /* Cor do texto */
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.register-container .form-label {
+  color: #000000; /* Cor do texto dos títulos dos campos */
+  font-size: 0.875rem; /* Tamanho da fonte dos títulos dos campos */
+  text-align: left; /* Alinhar à esquerda */
+  display: block; /* Certificar que a label ocupa toda a largura */
+}
+
+.register-container .form-control {
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.register-container .forgot-password {
+  text-align: left; /* Alinhar à esquerda */
+  display: block;
+  margin-top: -0.5rem; /* Ajuste para alinhar próximo ao campo senha */
+  margin-bottom: 1rem;
+  font-size: 0.875rem; /* Tamanho da fonte */
+}
+
+.register-container .btn-primary {
+  background-color: #007bff; /* Cor do botão */
+  border-color: #007bff;
+  display: block;
+  margin: 1rem auto; /* Centralizar o botão */
+}
+
+.register-container .btn-link {
+  color: #007bff; /* Cor dos links */
+  font-size: 0.875rem; /* Tamanho da fonte dos links */
+}
+
+.register-container .text-muted {
+  color: #6c757d;
+  font-size: 0.875rem; /* Tamanho da fonte */
+}
+
+.register-container .login-message {
+  font-size: 0.875rem; /* Tamanho da fonte */
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem; /* Adicionar margem inferior */
+}
+
+.register-container .login-link {
+  font-size: 0.875rem; /* Tamanho da fonte para "Faça o login!" */
+  text-align: center;
+  margin-bottom: 1rem;
+}

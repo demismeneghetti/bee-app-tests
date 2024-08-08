@@ -1,0 +1,46 @@
+.topbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f9fa;
+    z-index: 1000; /* Garante que a topbar fique acima de outros elementos */
+  }
+  
+  .logo-small {
+    height: 30px;
+  }
+  
+  .user-avatar {
+    cursor: pointer;
+    border: 2px solid #ccc;
+  }
+  
+  .user-info {
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .user-name {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  /* Ajustar a posição do dropdown */
+  .dropdown-menu {
+    left: auto !important;
+    right: 0 !important;
+    top: 100% !important;
+    margin-top: 10px !important;
+    z-index: 1100; /* Garante que o dropdown fique acima da topbar */
+  }
+  
+  .content {
+    margin-top: 70px; /* Ajuste para o conteúdo não ficar escondido atrás da topbar */
+  }
+  

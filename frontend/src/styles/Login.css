@@ -9,7 +9,7 @@ body {
 
 .login-container {
   background-color: #f8f9fa; /* Cor de fundo do container */
-  padding: 5rem;
+  padding: 2rem;
   border-radius: 0.5rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 100%;

@@ -1,5 +1,5 @@
 body {
-  background-color: #343a40; /* Cor de fundo da página */
+  background-color: #343a40;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -7,73 +7,80 @@ body {
   margin: 0;
 }
 
-.login-container {
-  background-color: #f8f9fa; /* Cor de fundo do container */
+.login-container, .register-container {
+  background-color: #f8f9fa;
   padding: 2rem;
   border-radius: 0.5rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 100%;
-  max-width: 400px; /* Ajuste da largura máxima */
+  width: 400px; /* Tamanho fixo para evitar que o container seja muito estreito */
+  max-width: 100%;
   text-align: center;
 }
 
-.login-container img {
-  max-width: 100px;
-  margin-bottom: 1rem;
+.login-container img, .register-container img {
+  max-width: 120px;
+  margin-bottom: 1.5rem;
 }
 
-.login-container h2 {
-  color: #000000; /* Cor do texto */
+.login-container h2, .register-container h2 {
+  color: #000000;
   font-size: 1.5rem;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 }
 
-.login-container .form-label {
-  color: #000000; /* Cor do texto dos títulos dos campos */
-  font-size: 0.875rem; /* Tamanho da fonte dos títulos dos campos */
-  text-align: left; /* Alinhar à esquerda */
-  display: block; /* Certificar que a label ocupa toda a largura */
+.login-container .form-label, .register-container .form-label {
+  color: #000000;
+  font-size: 1rem;
+  text-align: left;
+  display: block;
+  width: 100%; /* Certifica que a label ocupe toda a largura */
 }
 
-.login-container .form-control {
-  margin-bottom: 1rem;
+.login-container .form-control, .register-container .form-control {
+  margin-bottom: 1.5rem;
+  padding: 0.75rem;
+  width: 100%; /* Certifica que o campo ocupe toda a largura */
+  box-sizing: border-box;
   text-align: left;
 }
 
-.login-container .forgot-password {
-  text-align: left; /* Alinhar à esquerda */
+.login-container .forgot-password, .register-container .forgot-password {
+  text-align: left;
   display: block;
-  margin-top: -0.5rem; /* Ajuste para alinhar próximo ao campo senha */
-  margin-bottom: 1rem;
-  font-size: 0.875rem; /* Tamanho da fonte */
+  margin-top: -0.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 0.875rem;
 }
 
-.login-container .btn-primary {
-  background-color: #28a745; /* Cor do botão */
+.login-container .btn-primary, .register-container .btn-primary {
+  background-color: #28a745;
   border-color: #28a745;
   display: block;
-  margin: 1rem auto; /* Centralizar o botão */
+  margin: 1.5rem auto;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  width: 100%; /* Certifica que o botão ocupe toda a largura */
 }
 
-.login-container .btn-link {
-  color: #007bff; /* Cor dos links */
-  font-size: 0.875rem; /* Tamanho da fonte dos links */
+.login-container .btn-link, .register-container .btn-link {
+  color: #007bff;
+  font-size: 0.875rem;
 }
 
-.login-container .text-muted {
+.login-container .text-muted, .register-container .text-muted {
   color: #6c757d;
-  font-size: 0.875rem; /* Tamanho da fonte */
+  font-size: 0.875rem;
 }
 
-.login-container .register-message {
-  font-size: 0.875rem; /* Tamanho da fonte */
+.login-container .register-message, .register-container .register-message {
+  font-size: 0.875rem;
   text-align: center;
-  margin-top: 1rem;
-  margin-bottom: 0.5rem; /* Adicionar margem inferior */
-}
-
-.login-container .register-link {
-  font-size: 0.875rem; /* Tamanho da fonte para "Faça o cadastro!" */
-  text-align: center;
+  margin-top: 1.5rem;
   margin-bottom: 1rem;
+}
+
+.login-container .register-link, .register-container .register-link {
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
 }

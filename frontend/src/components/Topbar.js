@@ -34,7 +34,7 @@ function Topbar() {
             />
           }
           id="user-dropdown"
-          alignRight
+          align="end" // Substitui `alignRight` por `align="end"`
         >
           <div className="user-info">
             <Image

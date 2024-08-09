@@ -1,26 +1,31 @@
+"use client";
+
 import React, { useState } from 'react';
 import { Navbar, Nav, NavDropdown, Image } from 'react-bootstrap';
-import { useNavigate } from 'react-router-dom';
-import logo from '../assets/logo.png';
-import avatar from '../assets/avatar.png';
+import { useRouter } from 'next/navigation';
+import Link from 'next/link';
 import '../styles/Topbar.css';
 
+const logo = '/assets/logo.png';
+const avatar = '/assets/avatar.png';
+
 function Topbar() {
-  const navigate = useNavigate();
+  const router = useRouter();
   const [user] = useState({
     name: 'Demis',
     photo: null,
   });
 
   const handleLogout = () => {
-    localStorage.removeItem('user');
-    navigate('/login');
+    router.push('/login');
   };
 
   return (
     <Navbar bg="light" expand="lg" className="topbar">
-      <Navbar.Brand href="#home">
-        <img src={logo} alt="Logo" className="logo-small" />
+      <Navbar.Brand>
+        <Link href="/dashboard">
+          <Image src={logo} alt="Logo" className="logo-small" />
+        </Link>
       </Navbar.Brand>
       <Nav className="ml-auto">
         <NavDropdown
@@ -34,7 +39,6 @@ function Topbar() {
             />
           }
           id="user-dropdown"
-          align="end" // Substitui `alignRight` por `align="end"`
         >
           <div className="user-info">
             <Image
@@ -46,7 +50,7 @@ function Topbar() {
             <div className="user-name">{user.name}</div>
           </div>
           <NavDropdown.Divider />
-          <NavDropdown.Item onClick={() => navigate('/profile')}>Minha conta</NavDropdown.Item>
+          <NavDropdown.Item as={Link} href="/profile">Minha conta</NavDropdown.Item>
           <NavDropdown.Item onClick={handleLogout}>Sair</NavDropdown.Item>
         </NavDropdown>
       </Nav>

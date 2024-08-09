@@ -1,9 +1,18 @@
+"use client";
+
 import React from 'react';
-import { Navigate } from 'react-router-dom';
+import { useRouter } from 'next/navigation';
 
 const PrivateRoute = ({ element: Component }) => {
+  const router = useRouter();
   const isAuthenticated = !!localStorage.getItem('token');
-  return isAuthenticated ? Component : <Navigate to="/login" />;
+
+  if (!isAuthenticated) {
+    router.push('/login');
+    return null;
+  }
+
+  return <Component />;
 };
 
 export default PrivateRoute;

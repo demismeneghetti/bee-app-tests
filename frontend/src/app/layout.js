@@ -2,6 +2,8 @@ import '../styles/Index.css';
 import '../styles/App.css';
 import Topbar from '../components/Topbar';
 import Sidebar from '../components/Sidebar';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 export default function RootLayout({ children }) {
   return (
